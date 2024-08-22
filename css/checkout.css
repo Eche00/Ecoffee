@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Anek Telugu", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    background: #FFF9F1;    
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+nav i{
+    margin-right: 50px; 
+    margin-top: 10px;  
+    display: none; 
+    visibility: hidden;
+}
+nav .navbar{
+    background: #352807;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+nav .navbar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    list-style: none;
+}
+nav .navbar a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+}
+nav button{
+    width: 150px;
+    height: 50px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+}
+.logo img{
+    width: 100px;
+    height: 70px;
+    margin-top: 5px;
+}
+.logo h1{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.links ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-left: 100px;
+}
+.links ul li{
+    list-style: none;
+
+}
+.links ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #54400E;
+}
+.links ul button{
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    background: #54400E;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+main{
+    height: 1164px;
+    background: #F5F2EB;
+}
+main .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+main .top h1{
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+main .top p{
+    font-size: 20px;
+    color: #6c6c6c;
+}
+.thanks{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    
+}
+.thanks .fa-solid{
+    width: 300px;
+    height: 300px;
+    font-size: 300px;
+    color: #54400E;
+}
+.thanks h3{
+    font-size: 40px;
+    color: #54400E;
+}
+.thanks h4{
+    width: 250px;
+    height: 50px;
+    background: #54400E;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.thanks span{
+    opacity: 0.7;
+}
+.thanks h2{
+    font-size: 40px;
+}
+.thanks p{
+    font-size: 20px;
+    width: 300px;
+}
+.coffee{
+    height: 591px;
+    background: url(/Ecoffee/asset/footer.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 30px;
+}
+.coffee .label{
+    width: 1148px;
+    height: 354px;
+    background: #352807;
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    align-items: center;
+}
+.coffee .label img{
+    width: 350px;
+    height: 500px;
+    margin-top: -120px;
+}
+.coffee .label h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.coffee .label h4{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+footer{
+    height: 504px;
+    background: #181818;
+}
+footer .logos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    margin-left: 20px;
+}
+footer .logos img{
+    width: 150px;
+    height: 100px;
+}
+footer .logos img{
+    width: 100px;
+    height: 70px;
+    margin-top: 5px;
+}
+footer .logos h1{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px 0 40px;
+}
+.footer-links li{
+    color: #ebc583;
+    text-transform: uppercase;
+    list-style: none;
+}
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: #767676;
+    text-transform: capitalize;
+}
+hr{
+    margin-top: 50px;
+}
+footer p:last-child{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+@media(max-width:480px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 170px;
+        background: #FFF9F1;    
+        align-items: center;
+        padding: 0;
+    }
+    .links{
+        display: none;
+    }
+    .logo h1{
+        font-size: 10px;
+    }
+    main .top{
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+    main .top h1{
+        font-size: 40px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 70px;
+    }
+    main .thanks h4{
+        width: 200px;
+    }
+    main .thanks h2{
+        font-size: 25px;
+    }
+    main .thanks p{
+        font-size: 20px;
+    }
+    .coffee{
+    }
+    .coffee .label img{
+        width: 350px;
+        height: 300px;
+        margin-top: -70px;
+    }
+    .coffee .label{
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        width: 400px;
+        gap: 0;
+        justify-content: none;
+
+    }
+    .coffee .label .text{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        
+    }
+    .coffee .label .text h1{
+        font-size: 20px;
+    }
+    footer{
+        height: 850px;
+    }
+    .footer-links{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .footer-links div{
+        margin-top: 20px;
+    }
+    nav i{
+        display: block;
+        visibility: visible;
+    }
+}

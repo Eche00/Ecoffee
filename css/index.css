@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* VARIABLES */
+  --color-white: #FFFFFF;
+  --color-discount: #FDC432;
+  --color-hero-heading: #CE733F;
+  --color-brown-btn: #54400E;
+  --color-hero-heading-border: #C3B677;
+  --color-hero-bg: - #FFF9F1;
+  --color-grids-bg:- #E8E0CA;
+  --color-meals-bg:#F5F2EB;
+  --color-meals-img-bg:#E8E0CA;
+  --color-products-bg:  - #F5F2EB;
+  --color-product-img-bg: #E8E0CA;
+  --color-testimonial-bg: #E8E0CA;
+  --color-meal-name: #5B5B5B;
+  --color-meal-price: #BF9016;
+  --color-cta-bg: #352807;
+  --font-Marc: "Marcellus", serif;
+  --font-Anek: "Anek Telugu", sans-serif;
+  --font-Manrope: "Manrope", sans-serif;
+}
+
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* TYPOGRAPHY */
+
+.hero-heading {
+  text-shadow: .6rem 1px rgb(224, 222, 222);
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 3.5rem 0;
+  color: var(--color-hero-heading);
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1.5rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+h1, h2, h3, p {
+  font-family: var(--font-Marc);
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+.our-story p, 
+.our-meals p {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 4.4rem;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 9rem;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 4.4rem;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+}
+
+
+/* COMPONENTS */
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-round {
+  border-radius: 5rem;
+  padding: 1.3rem 2.5rem;
+}
+
+.btn-square {
+  border-radius: .3rem;
+  border: 1px solid #5B5B5B;
+  background-color: transparent;
+  padding: .3rem 3rem;
+}
+
+.btn-brown {
+  background-color: var(--color-brown-btn);
+  color: var(--color-white);
+  font-family: var(--font-Manrope);
+  font-size: 1.5rem;
+}
+
+/* SECTON - CONTAINER */
+
+.main {
+  margin: 0 0;
+}
+
+section {
+  padding: 10rem 3rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* SECTON - HERO */
+
+.text-em {
+  position: relative; 
+}
+
+.text2 {
+  color: rgba(0, 0, 0, 0);
+}
+
+.text1 {
+  position: absolute;
+  bottom: -.2rem;
+  left: 1rem;
+  -webkit-text-stroke: 1px #885538;
+}
+
+.hero {
+  background-color: rgb(253, 242, 242);
+  padding: 6rem 1.2rem 8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  overflow: hidden;
+  gap: 3rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.cofee-img {
+  position: relative;
+  padding: 2rem 4rem;
+}
+
+.img-top-left {
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  width: 13rem;
+  transform: rotate(153deg);
+}
+
+.img-bottom-right {
+  position: absolute;
+  bottom: -5rem;
+  right: -5rem;
+  width: 15rem;
+}
+
+.img-bottom-center {
+  position: absolute;
+  bottom: -16rem;
+  left: 10%;
+  width: 15rem;
+  transform: rotate(0deg);
+}
+
+.cofee-cup-img {
+  width: 20rem;
+  z-index: 3;
+  transform: rotate(20deg);
+}
+
+.img-center {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  transform: scale(1.7) rotate(1deg);
+  left: -2.3rem;
+  top: -16rem;
+}
+
+@media screen and (min-width:768px) {
+
+  /* SECTON - CONTAINER */
+
+  body{
+    margin: 0 auto;
+  }
+
+  .main {
+    padding: 2rem 2rem;
+    width: 100%;
+  }
+
+  section {
+    padding: 10rem 3rem;
+  }
+
+  .btn-brown {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden;
+    gap: 6rem;
+    padding: 15rem 7rem 15rem 7rem;
+  }
+  
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 79rem;
+  }
+
+  .img-top-left {
+    top: -15rem;
+    left: -10rem;
+    width: 44rem;
+    padding-left: 13rem;
+  }
+  
+  .img-bottom-right {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: 25rem;
+  }
+  
+  .img-bottom-center {
+    position: absolute;
+    bottom: -11rem;
+    left: 40%;
+    width: 30rem;
+    transform: rotate(0deg);
+  }
+  
+  .cofee-cup-img {
+    width: 30rem;
+    z-index: 3;
+    transform: rotate(20deg);
+  }
+
+  .img-center {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    transform: scale(1.7) rotate(1deg);
+    left: -2.3rem;
+    top: -16rem;
+  }  
+}
+
+/* SECTON - OUR STORY */
+
+.our-story {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-story p {
+  padding-bottom: 2.5rem;
+}
+
+.story-top-left, 
+.story-bottom-right {
+  position: absolute;
+}
+
+.story-top-left {
+  width: 20rem;
+  top: 0rem;
+  left: -6rem;
+}
+
+.story-bottom-right {
+  width: 24rem;
+  bottom: 7rem;
+  right: -11rem;
+  transform: rotate(102deg) scale(2);
+}
+
+@media screen and (min-width:768px) {
+  .our-story {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .our-story-text-block {
+    max-width: 86rem;
+    width: 100%;
+    margin-top: -4rem;
+  }
+
+  .our-story-text-block p{
+    line-height: 3rem;
+  }
+
+  .story-top-left {
+    width: 27rem;
+    top: -3rem;
+    left: -8rem;
+  }
+  
+  .story-bottom-right {
+    width: 33rem;
+    bottom: 13rem;
+    right: -10rem;
+    transform: rotate(102deg) scale(2);
+  }
+}
+
+/* SECTON -  OUR MEALS*/
+
+.meals2{
+  display: none;
+}
+
+.our-meals {
+  background-color: var(--color-meals-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.meals-top-left {
+  position: absolute;  
+  width: 20rem;
+  top: -5rem;
+  left: -3rem;
+}
+
+.meal-description {
+  padding: 7rem 0 3rem 0;
+}
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .7rem 0;
+  gap: .7rem;
+}
+
+.meal-img {
+  background-color: var(--color-meals-img-bg);
+  width: 22rem;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-img img {
+  width: 10rem;
+  justify-content: center;
+}
+
+.meal-name, 
+.meal-price {
+  font-family: var(--font-Anek);
+}
+
+.meal-name {
+  color: var(--color-meal-name);
+}
+
+.meal-price {
+  color: var(--color-meal-price);
+}
+
+@media screen and (min-width:768px) {
+
+  .meals2 {
+    margin-top: 2.5rem;
+  }
+
+  .meal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meals {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meal-description {
+    padding: 7rem 0 3rem 0;
+    max-width: 75rem;
+    width: 100%;
+    margin-top: -10rem;
+  }
+
+  .meal-description p{
+    line-height: 3rem;
+  }
+
+  .meal-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 0;
+    gap: .7rem;
+  }
+}
+
+
+/* SECTON -  REVIEW*/
+
+.card {
+  background-color: var(--color-testimonial-bg);
+  padding: 2.5rem;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.review {
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+}
+
+.review-top-right,
+.review-bottom-left {
+  position: absolute;
+}
+
+.review-top-right {
+  width: 15rem;
+  right: -5rem;
+  top: -10rem;
+  transform: rotate(-45deg);
+}
+
+.review-bottom-left {
+  width: 10rem;
+  left: -1rem;
+  bottom: -3rem;
+}
+
+.review-nav{
+  display: none;
+}
+
+@media screen and (min-width:768px) { 
+
+  .review-nav {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: -1rem 0 5rem 0;
+  }
+
+  .review-nav img {
+    width: 2rem;
+  }
+
+  .review {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-group{
+    
+  }
+
+  .review-coll {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 105vw;
+  }
+
+  .review-card {
+    height: 100%;
+    max-width: 55rem;
+  }
+
+  .review-card p {
+    line-height: 3rem;
+  }
+
+  .review-top-right {
+    width: 25rem;
+  }
+  
+  .review-bottom-left {
+    width: 20rem;
+    left: -5rem;
+    bottom: -3rem;
+  }
+
+}
+
+/* SECTON - GALLERY */
+
+
+/* WITH BACKGROUND */
+
+.gallery {
+  background-color: #F5F2EB;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(15, auto);
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 110rem;
+}
+
+.img1 {
+  grid-column: 1 / 2;
+  grid-row: 6 / 10 ;
+  background-image: url(../asset/Homeimg/img1.jpeg); 
+  max-height: 13rem;
+  height: 100%;
+}
+
+.img2 {
+  grid-column: 1/ 2;
+  grid-row: 10 / 15;
+  background-image: url(../asset/Homeimg/img2.jpeg); 
+  width: 100%;
+  height: 15rem;
+}
+
+.img3 {
+  grid-column: 2/ 3;
+  grid-row: 1 / 7;
+  background-image: url(../asset/Homeimg/img3.jpeg); 
+  width: 100%;
+  height: 11rem;
+}
+
+.img4 {
+  grid-column: 2 / 3;
+  grid-row: 7 / 11;
+  background-image: url(../asset/Homeimg/img4.jpeg);
+  width: 100%;
+  height: 11rem; 
+}
+
+.img5 {
+  grid-column: 2 / 3;
+  grid-row: 11 / 16;
+  background-image: url(../asset/Homeimg/img5.jpeg); 
+  width: 100%;
+  height: 15rem;
+}
+
+.img6 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 8; 
+  background-image: url(../asset/Homeimg/img6.jpeg);
+  width: 100%;
+  height: 12rem; 
+}
+
+.img7 {
+  grid-column: 3 / 4;
+  grid-row: 8 / 13;
+  height: 15rem;
+  background-image: url(../asset/Homeimg/img7.jpeg); 
+} 
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center; 
+}
+
+@media screen and (min-width:768px) {
+
+  .img1 {
+    max-height: 32rem;
+    height: 100%;
+  }
+
+  .img2 { 
+    width: 100%;
+    height: 39rem;
+  }
+
+  .img3 {
+    width: 100%;
+    height: 39rem;
+  }
+
+  .img4 {
+    width: 100%;
+    height: 32rem; 
+  }
+
+  .img5 {
+    width: 100%;
+    height: 39rem;
+  }
+
+  .img6 {
+    width: 100%;
+    height: 32rem; 
+  }
+
+  .img7 {
+    height: 39rem;
+  } 
+
+  .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+  }
+}
+
+
+/* SECTON - CTA */
+
+.cta {
+  background-image: url(../asset/Homeimg/cta-bg.png);
+  background-size: cover;
+  margin: 0 0 54rm 0;
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+}
+
+.brown-bg {
+  background-color: var(--color-cta-bg);
+  width: 100%;
+  position: relative; 
+  min-height: 35rem;
+  padding: 2.5rem 2rem;
+}
+
+.cta-text{
+  padding-right: 2rem;
+  min-width: 35rem;
+}
+
+.cta-text h2{
+  color: var(--color-white);
+  text-align: left;
+}
+
+.cta-text p{
+  color: var(--color-white);
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.cta-text .discount{
+  color: var(--color-discount);
+}
+
+.spoon {
+  width: 23rem;
+  position: absolute;
+  right: -8rem;
+  bottom: -2rem;
+}
+
+@media screen and (min-width:768px) { 
+  .cta {
+    padding: 10rem 10rem;
+  }
+
+  .brown-bg {
+    padding: 7rem 7rem;
+  }
+
+  .spoon {
+    width: 30rem;
+    right: 0rem;
+    bottom: 1rem;
+  }
+
+  .cta h2 {
+    font-size: 6rem;
+    max-width: 70%;
+  }
+
+  .cta p {
+    font-size: 3.5rem;
+  }
+}
+
