@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* VARIABLES */
+  --color-white: #FFFFFF;
+  --color-discount: #FDC432;
+  --color-hero-heading: #CE733F;
+  --color-brown-btn: #54400E;
+  --color-hero-heading-border: #C3B677;
+  --color-hero-bg: - #FFF9F1;
+  --color-grids-bg:- #E8E0CA;
+  --color-meals-bg:#F5F2EB;
+  --color-meals-img-bg:#E8E0CA;
+  --color-products-bg:  - #F5F2EB;
+  --color-product-img-bg: #E8E0CA;
+  --color-testimonial-bg: #E8E0CA;
+  --color-meal-name: #5B5B5B;
+  --color-meal-price: #BF9016;
+  --color-cta-bg: #352807;
+  --font-Marc: "Marcellus", serif;
+  --font-Anek: "Anek Telugu", sans-serif;
+  --font-Manrope: "Manrope", sans-serif;
+}
+
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* TYPOGRAPHY */
+
+.hero-heading {
+  text-shadow: .6rem 1px rgb(224, 222, 222);
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 3.5rem 0;
+  color: var(--color-hero-heading);
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+h1, h2, h3, p {
+  font-family: var(--font-Marc);
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+
+/* COMPONENTS */
+
+.buttons {
+  margin: 2rem;
+  width: 100%;
+  max-width: 100rem;
+}
+
+.top-btns {
+  padding: 1rem 0;
+  border-bottom: .2rem solid var(--color-brown-btn);
+  margin-bottom: 1.5rem;
+}
+
+.btn-meal:not(:last-child) {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+}
+
+.btn-square {
+  border-radius: .3rem;
+  border: 1px solid #5B5B5B;
+  background-color: transparent;
+}
+
+.btn-active {
+  background-color: var(--color-brown-btn);
+  color: var(--color-white);
+}
+
+/* NAV */
+
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+
+.menu-nav img {
+  width: 2rem;
+}
+
+/* SECTON -  OUR MEALS*/
+
+
+.our-menu {
+  background-color: var(--color-meals-bg);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem 10rem 1rem;
+}
+
+.meals-top-left {  
+  width: 20rem;
+  margin-left: -4rem;
+  position: absolute;
+  top: 1rem;
+}
+
+.menu-description {
+  text-align: center;
+  margin-top: 20rem;
+}
+
+@media screen and (min-width:350px) {
+  .meals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .7rem 0;
+  gap: .7rem;
+}
+
+.meal-img {
+  background-color: var(--color-meals-img-bg);
+  width: 15rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-img img {
+  width: 10rem;
+  justify-content: center;
+}
+
+.meal-name, 
+.meal-price {
+  font-family: var(--font-Anek);
+}
+
+.meal-name {
+  color: var(--color-meal-name);
+}
+
+.meal-price {
+  color: var(--color-meal-price);
+}
+
+@media screen and (min-width:768px) {
+
+  .menu-nav {
+    display: none;
+  }
+
+  .meals2 {
+    margin-top: 2.5rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meals {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-description {
+    padding: 7rem 0 3rem 0;
+    max-width: 60rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .meal-description p{
+    line-height: 3rem;
+  }
+
+  .meal-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem 0;
+    gap: .7rem;
+  }
+
+  .meals-top-left {  
+    width: 20rem;
+    margin-left: -4rem;
+    position: absolute;
+    top: -5rem;
+    left: -1rem;
+  }
+
+  .meal-img {
+    width: 22rem;
+    height: 28rem;
+  }
+}
